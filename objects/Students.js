@@ -1,7 +1,7 @@
 const wives = [
     {
         "name" : "Siti Mirna",
-        "phone" : "029292828112"
+        "phone2" : "029292828112"
     },
     {
         "name" : "Bertania",
@@ -11,7 +11,7 @@ const wives = [
 const students = [
     {
         "name" : "Anton Bareuh",
-        "address": "Bandung"
+        "address": "Bandung",
     },
     {
         "name" : "Adi Hilap",
@@ -30,6 +30,30 @@ const students = [
             }
         ],
         "wives": wives
-    }
+    },
 ]
-console.log(students[2].address[0].city);
+
+for (let item of students) {
+    item.status = item.hasOwnProperty("wives") ? "Married" : "Single";
+    console.log(item.name+" : "+item.status);
+}
+
+let total_married = students.filter((item)=>item.status=="Married").length;
+let total_single = students.length - total_married;
+
+console.log("Total Married : "+total_married);
+console.log("Total Single : "+total_single);
+
+
+
+//Expected Output:
+/*
+
+Anton Bareuh : Single
+Adi Hilap : Single
+Regith Nurmala : Married
+
+Total Married : 1
+Total Single : 2
+
+*/
