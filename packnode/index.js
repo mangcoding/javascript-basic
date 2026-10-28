@@ -7,7 +7,6 @@ console.log(`Plattform ${os.platform()}`);
 console.log(`Arch ${os.arch()}`);
 
 const parseURL = url.parse('https://bitbucket.org/devteamits/w4r-2025/commits');
-
 const host = parseURL.hostname;
 console.log(host);
 
