@@ -1,0 +1,14 @@
+{
+  "name": "packnode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nugraha",
+  "license": "ISC",
+  "dependencies": {
+    "date-fns": "^4.4.0"
+  }
+}
