@@ -37,6 +37,6 @@ holidays = [
     '2026-06-01',
     '2026-06-16',
 ];
-
+//Jika yang di export multi func, cara panggilnya datediff.nameFunction
 const diff = datediff('2026-02-03', '2026-06-11',holidays);
 console.log(`Total hari kerja ${diff}`);

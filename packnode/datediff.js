@@ -14,4 +14,4 @@ function daysOfWork(start, end, holidays) {
 }
 
 module.exports = daysOfWork;
-//Multi module.exports = {daysOfWork, Otherfunct};
+//Multifunction ---> module.exports = {daysOfWork, Otherfunct};
