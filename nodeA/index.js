@@ -1,7 +1,7 @@
 const os = require('os');
 const url = require('url');
 //Langsung ke fungsi tertentu
-const { workDaysDiffExcludeHolidays } = require('./datediff');
+const { workDaysDiffExcludeHolidays } = require('./datediff.js');
 // dipanggil sebagai objek baru 
 // const df = require('./datediff');
 // cara manggilnya df.functionYangDipanggil
